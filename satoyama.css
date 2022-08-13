@@ -1,0 +1,74 @@
+html, body, header, div, article, nav, section, main {
+    margin: 0;
+    padding: 0;
+}
+html {
+    min-height: 100%;
+    border: 1px solid #3c3c3c;
+    min-width: 320px;
+    width: 40%;
+    margin: 0 auto;
+}
+body {
+    min-height: 100%;
+}
+header {
+    background-image: url(vegetables.jpg);
+    background-position: 70%;
+    color: #fff;
+    font-size: 1em;
+    padding: 3em 0;
+}
+header>h1,h2 {
+    margin: 0 auto;
+    width: max-content;
+    background: rgba(0,0,0,0.5);
+    font-family: "Courier New";
+}
+
+h2 {
+    font-size: 1.1em;
+    font-weight: normal;
+}
+
+main {
+    text-align: center;
+}
+
+main>h3 {
+    margin-bottom: 2em;
+}
+
+.large-button {
+    border: 1px solid #c3c3c3;
+    padding: 1em 2em;
+    background: #64c99b;
+    text-decoration: none;
+    color: #7a4f99;
+}
+.large-button:hover {
+    background: #b2cf3e;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0; left: 0;
+    text-align: center;
+    background-color: #44a5cb;
+    padding: 0.4em 0;
+    min-width: 320px;
+    width: 40%;
+    margin: auto;
+}
+footer a {
+    color: #fff;
+}
+
+pre {
+    font-size: 0.5em;
+    text-align: left;
+    width: max-content;
+    margin: 4em auto 0;
+    color: grey;
+}
