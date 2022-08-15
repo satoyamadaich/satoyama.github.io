@@ -14,6 +14,9 @@ window.addEventListener("DOMContentLoaded", function () {
     var mail_template_text = templateEl.innerHTML.replace("TITLE",decodeURI(ps.title)).replace("DATE", decodeURI(ps.date));
     templateEl.innerHTML = mail_template_text;
 
+    document.querySelectorAll(".date").forEach((el)=>el.innerHTML = decodeURI(ps.date));
+    document.querySelectorAll(".title").forEach((el)=>el.innerHTML = decodeURI(ps.title));
+
     document.querySelectorAll(".mailto-button").forEach((b)=>{
 	b.href = "mailto:satoyamadaich@gmail.com?subject=" +
 	    encodeURI("里山大地参加申込み") +
