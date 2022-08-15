@@ -14,21 +14,60 @@
     </header>
     <main>
       <h3>参加お申込み</h3>
-      <a class="mailto-button large-button" href="">申し込みメール作成</a>
-      <pre id="mail-template">
-希望プログラム名：「TITLE」
-１．参加日：DATE 開催　
-２．代表者のお名前：
-３．人数：大人　　　人
-　　　　　子ども　　人、年令　（①　　才、②　　才、③　　才、 ④　　才）　　　　　
-４．当日連絡先：
-５．食品アレルギーがある方：
+
+      <form action="sent.html" method="GET">
+        <table class="form-table">
+          <tr>
+            <td><label for="program-name">希望プログラム名</label></td>
+            <td><input type="text" id="program-name" name="program-name" /></td>
+          </tr>
+
+          <tr>
+            <td><label>１．参加日</label></td>
+            <td><input type="text" id="program-date" name="program-date"  /></td>
+          </tr>
+          
+          <tr>
+            <td><label for="name" >２．代表者のお名前</label></td>
+            <td><input type="text" id="name" name="name" /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><label for="num">３．人数</label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea id="num" name="num">
+大人　　　人
+子ども　　人
+年令　（①　　才、②　　才、③　　才、　④　才）
+</textarea></td>
+          </tr>
+
+          <tr>
+            <td><label for="tel">４．当日連絡先</label></td>
+            <td><input type="text" id="tel" name="tel" /></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><label for="allergy">５．食品アレルギーがある方</label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea id="allergy" name="allergy">
 ①お名前　　　　　　　　　　　　　年令
 　内容
 ②お名前　　　　　　　　　　　　　年令
-　内容
-６．やってみたいこと、連絡他何でも
-      </pre>
+　内容</textarea></td>
+          </tr>
+
+          <tr>
+            <td colspan="2"><label for="free">６．やってみたいこと、連絡他何でも</label></td>
+          </tr>
+          <tr>
+            <td colspan="2"><textarea id="free" name="free"></textarea></td>
+          </tr>
+        </table>
+        <input type="submit" class="large-button" style="display:block; margin-bottom:2em" />
+      </form>
     </main>
     <footer>
       <address>
