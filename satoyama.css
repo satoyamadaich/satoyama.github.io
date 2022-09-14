@@ -88,8 +88,11 @@ th,td {
     text-align:left;
 }
 th{
-    width: 13em;
+    max-width: 13em;
     font-weight: normal;
+}
+td {
+    min-width:12em;
 }
 
 input[type="date"],
