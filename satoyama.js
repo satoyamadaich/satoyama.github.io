@@ -42,7 +42,7 @@ window.addEventListener("DOMContentLoaded", function () {
         Email.send({
             SecureToken : "0f3f703e-d0d9-44b2-a4f5-75bbe1a4954a",
             To : 'satoyamadaich@gmail.com',
-            From : "satoyamadaich@gmail.com",
+            From : "ympbyc@live.jp",
             ReplyTo: document.getElementById("in-email").value,
             Subject : "" + ps.date + " " + ps.title + " 参加申し込み",
             Body : text
