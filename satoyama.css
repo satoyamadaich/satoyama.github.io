@@ -49,26 +49,66 @@ main>h3 {
 .large-button:hover {
     background: #b2cf3e;
 }
+.large-button:disabled {
+    background: grey;
+}
 
 footer {
-    position: absolute;
-    bottom: 0;
-    right: 0; left: 0;
+    display:block;
+    margin: 2em auto 0;
+    /*position: absolute;*/
+    /*bottom: 0;
+    right: 0; left: 0;*/
     text-align: center;
     background-color: #44a5cb;
     padding: 0.4em 0;
     min-width: 320px;
-    width: 40%;
-    margin: auto;
+    width: 100%;
 }
 footer a {
     color: #fff;
 }
 
 pre {
-    font-size: 0.5em;
     text-align: left;
     width: max-content;
-    margin: 4em auto 0;
-    color: #e3e3e3;;
+    margin: 1em auto;
+}
+
+noscript {
+    color: red;
+}
+
+#mail-template{display:none}
+
+table {
+    width: 100%;
+}
+th,td {
+    text-align:left;
+}
+th{
+    width: 13em;
+    font-weight: normal;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width:100%;
+    box-sizing:border-box;
+}
+textarea {
+    height: 5.5em;
+}
+
+.title,.date {
+    text-align:left;
+    padding-left:2em;
+    font-family: Courier, sans-serif;
+}
+.date {
+    font-weight:bold;
 }

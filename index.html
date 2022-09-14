@@ -5,6 +5,7 @@
     <title>里山大地自然学校 Satoyama-Daichi Nature School</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="satoyama.css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="satoyama.js"></script>
   </head>
   <body>
@@ -14,15 +15,17 @@
     </header>
     <main>
       <h3>参加お申込み</h3>
-      <h4 class="title"></h4>
-      <p class="date" style="margin-bottom:2em"></p>
-      <a class="mailtoui mailto-button large-button" href="">申し込みメール作成</a>
-      <pre id="mail-template">
-希望プログラム名：「TITLE」
-１．参加日：DATE 開催　
+
+      <noscript>申し込みフォームにはJavaScriptを使用しています。
+        JavaScriptを有効にするか、
+        以下の書式を埋めて、satoyamadaich[AT]gmail.com までメールしてください。
+        <pre>
+希望プログラム名：「 」
+１．参加日：　
 ２．代表者のお名前：
 ３．人数：大人　　　人
-　　　　　子ども　　人、年令　（①　　才、②　　才、③　　才、 ④　　才）　　　　　
+　　　　　子ども　　人、
+　　　　　年令　（①　　才、②　　才、③　　才、 ④　　才）　　　　　
 ４．当日連絡先：
 ５．食品アレルギーがある方：
 ①お名前　　　　　　　　　　　　　年令
@@ -30,13 +33,51 @@
 ②お名前　　　　　　　　　　　　　年令
 　内容
 ６．やってみたいこと、連絡他何でも
-      </pre>
+        </pre>
+      </noscript>
+
+      <h4 class="title"></h4>
+      <p class="date" style="margin-bottom:2em"></p>
+      <!--a class="mailtoui mailto-button large-button" href="">申し込みメール作成</a -->
+
+      <form id="signup-form" action="#">
+        <label for="in-email">0. Eメールアドレス</label>
+        <input id="in-email" name="Eメール" type="email" />
+
+        <label for="in-date">1. 参加日</label>
+        <input id="in-date" name="日付" type="date" />
+
+        <label for="in-name">2. 代表者のお名前</label>
+        <input id="in-name" name="代表者" type="text" />
+
+        <label for="in-num">3. 人数</label>
+        <textarea id="in-num" name="人数">大人　人、
+子ども　人、
+年令(①　才、②　才、③　才、④　才)</textarea>
+
+        <label for="in-tel">4. 当日連絡先</label>
+        <input id="in-tel" type="tel" name="連絡先" />
+
+        <label for="in-allergy">5. 食品アレルギーがある方：</label>
+        <textarea id="in-allergy" name="アレルギー">
+①お名前　　　　　　年令
+　内容
+②お名前　　　　　　年令
+　内容</textarea>
+
+
+        <label for="in-misc">6. やってみたいこと、<br/>連絡他何でも</label>
+        <textarea id="in-misc" name="備考"></textarea>
+
+        <label for="in-submit"></label>
+        <input id="in-submit" type="submit" class="large-button" value="申し込み" />
+      </form>
     </main>
     <footer>
       <address>
 	<a href="https://satoyamadaich.github.io/">satoyamadaich.github.io</a>
       </address>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js" data-options='{"title": "メールソフトの選択", "buttonText1": "Gmail", "buttonText2": "Outlook", "buttonText3": "Yahooメール", "buttonText4": "既定のメールアプリ"}'></script>
+    <!--script src="https://cdn.jsdelivr.net/npm/mailtoui@1.0.3/dist/mailtoui-min.js" data-options='{"title": "メールソフトの選択", "buttonText1": "Gmail", "buttonText2": "Outlook", "buttonText3": "Yahooメール", "buttonText4": "既定のメールアプリ"}'></script-->
   </body>
 </html>
