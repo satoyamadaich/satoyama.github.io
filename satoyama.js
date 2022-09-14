@@ -55,6 +55,7 @@ window.addEventListener("DOMContentLoaded", function () {
         );
     });
 
+    document.querySelector("header").style.backgroundPosition = Math.floor(Math.random() * 100) + "% " + Math.floor(Math.random() * 100) + "%";
 
 
     /*document.querySelectorAll(".mailto-button").forEach((b)=>{

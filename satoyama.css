@@ -14,7 +14,7 @@ body {
 }
 header {
     background-image: url(vegetables.jpg);
-    background-position: 70%;
+    background-position: 0 70%;
     color: #fff;
     font-size: 1em;
     padding: 3em 0;
