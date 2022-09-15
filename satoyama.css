@@ -4,7 +4,8 @@ html, body, header, div, article, nav, section, main {
 }
 html {
     min-height: 100%;
-    border: 1px solid #3c3c3c;
+    /*border: 1px solid #3c3c3c;*/
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 320px;
     width: 40%;
     margin: 0 auto;
@@ -43,6 +44,7 @@ h2 {
 
 main {
     text-align: center;
+    padding: 0 1em;
 }
 
 main>h3 {
