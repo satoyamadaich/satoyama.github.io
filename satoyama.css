@@ -84,9 +84,13 @@ footer p {
     color: #fff;
     line-height: 1.2em;
     padding:0;
-    margin:0;
+    margin: 1em 0 0;
     font-size:0.8em;
     font-style:normal;
+}
+footer .copy {
+    margin: -1.1em 0 0;
+    float: right;
 }
 
 pre {
