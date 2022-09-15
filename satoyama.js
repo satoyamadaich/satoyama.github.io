@@ -43,17 +43,23 @@ window.addEventListener("DOMContentLoaded", function () {
             alert("代表者名を入力してください"); return;
         }
 
-        let text = decodeURI(new URLSearchParams(new FormData(form)).toString().split(/[\?\&]/).join("\n\n"));
+        let text = "";
+        new FormData(form).forEach((v,k)=>text += k + ": " + decodeURI(v) + `
+\r\n
+<br>
+`);
 
         let btn = form.querySelector("input[type=submit]");
         btn.value = "送信中";
+
+        console.log(text);
 
         Email.send({
             SecureToken : "0f3f703e-d0d9-44b2-a4f5-75bbe1a4954a",
             To : ['satoyamadaich@gmail.com', 'ympbyc@gmail.com'],
             From : "ympbyc@live.jp",
             ReplyTo: document.getElementById("in-email").value,
-            Subject : "" + ps.date + " " + ps.title + " 参加申し込み",
+            Subject : "" + ps.date + " " + decodeURI(ps.title) + " 参加申し込み",
             Body : text
         }).then(
             message => {
