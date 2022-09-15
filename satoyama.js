@@ -34,6 +34,15 @@ window.addEventListener("DOMContentLoaded", function () {
 
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
+        let fd = new FormData(form);
+
+        if (fd.get("Eメール").search(/^.+@.+\..+$/) !== 0) {
+            alert("Eメールアドレスを入力してください"); return;
+        }
+        if (fd.get("代表者").search(/^\s*$/) > -1) {
+            alert("代表者名を入力してください"); return;
+        }
+
         let text = decodeURI(new URLSearchParams(new FormData(form)).toString().split(/[\?\&]/).join("\n\n"));
 
         let btn = form.querySelector("input[type=submit]");

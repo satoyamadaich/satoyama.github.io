@@ -9,6 +9,16 @@ html {
     width: 40%;
     margin: 0 auto;
 }
+@media only screen and (max-width: 480px) {
+    html {
+        width: 100%
+    }
+}
+@media only screen and (min-width: 480px) {
+    html {
+        min-width: 480px
+    }
+}
 body {
     min-height: 100%;
 }
