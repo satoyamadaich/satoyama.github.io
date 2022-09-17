@@ -26,11 +26,13 @@ window.addEventListener("DOMContentLoaded", function () {
     }
 
     let form = document.getElementById("signup-form");
-    let tbl = document.createElement("table");
-    form.appendChild(tbl);
-    form.querySelectorAll("label").forEach((lbl)=>{
-        tbl.appendChild(make_row(lbl));
-    });
+    if (document.body.clientWidth > 370) {
+        let tbl = document.createElement("table");
+        form.appendChild(tbl);
+        form.querySelectorAll("label").forEach((lbl)=>{
+            tbl.appendChild(make_row(lbl));
+        });
+    }
 
     form.addEventListener("submit", (e)=>{
         e.preventDefault();
