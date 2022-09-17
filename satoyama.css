@@ -77,11 +77,13 @@ footer {
     min-width: 320px;
     width: 100%;
 }
+footer {
+    color: #fff;
+}
 footer a{
     color: #fff;
 }
 footer p {
-    color: #fff;
     line-height: 1.2em;
     padding:0;
     margin: 1em 0 0;
