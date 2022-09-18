@@ -2,21 +2,25 @@ html, body, header, div, article, nav, section, main {
     margin: 0;
     padding: 0;
 }
-html {
+html {    background-size: 50%;
+     }
+body {
     min-height: 100%;
     /*border: 1px solid #3c3c3c;*/
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     min-width: 320px;
     width: 40%;
     margin: 0 auto;
+    background-color:#fff;
+    filter:none;
 }
 @media only screen and (max-width: 480px) {
-    html {
+    body {
         width: 100%
     }
 }
 @media only screen and (min-width: 480px) {
-    html {
+    body {
         min-width: 480px
     }
 }
@@ -51,6 +55,14 @@ main>h3 {
     margin-bottom: 2em;
 }
 
+.button {
+    border: 1px solid #c3c3c3;
+    background: #64c99b;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 1em 2px;
+    border-radius: 4px
+}
 .large-button {
     border: 1px solid #c3c3c3;
     padding: 1em 2em;
@@ -58,10 +70,12 @@ main>h3 {
     text-decoration: none;
     color: #7a4f99;
 }
-.large-button:hover {
+.large-button:hover,
+.button:hover {
     background: #b2cf3e;
 }
-.large-button:disabled {
+.large-button:disabled
+.button:disabled {
     background: grey;
 }
 
@@ -142,3 +156,10 @@ textarea {
     font-weight:bold;
 }
 form {text-align:left}
+
+.pdflinks {
+    text-align: left;
+}
+
+.spacious {
+    margin-top: 4em}
