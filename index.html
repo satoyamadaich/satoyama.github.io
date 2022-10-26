@@ -5,74 +5,37 @@
     <title>里山大地自然学校 Satoyama-Daichi Nature School</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="satoyama.css">
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="satoyama.js"></script>
+    <script src="top.js"></script>
   </head>
   <body>
-    <header>
+    <header style="background-image:url(imgs/2022-09-banner.png);background-position:10% center">
       <h1><a href="satoyama.html">里山大地自然学校</a></h1>
       <h2><a href="satoyama.html">Satoyama-Daichi Nature School</a></h2>
     </header>
     <main>
-      <h3>参加お申込み</h3>
-
-      <noscript>申し込みフォームにはJavaScriptを使用しています。
-        JavaScriptを有効にするか、
-        以下の書式を埋めて、satoyamadaich[AT]gmail.com までメールしてください。
-        <pre>
-希望プログラム名：「 」
-１．参加日：　
-２．代表者のお名前：
-３．人数：大人　　　人
-　　　　　子ども　　人、
-　　　　　年令　（①　　才、②　　才、③　　才、 ④　　才）　　　　　
-４．当日連絡先：
-５．食品アレルギーがある方：
-①お名前　　　　　　　　　　　　　年令
-　内容
-②お名前　　　　　　　　　　　　　年令
-　内容
-６．やってみたいこと、連絡他何でも
-        </pre>
-        <style>form{display:none}</style>
-      </noscript>
-
-      <h4 class="title"></h4>
-      <p class="date" style="margin-bottom:2em"></p>
-      <!--a class="mailtoui mailto-button large-button" href="">申し込みメール作成</a -->
-
-      <form id="signup-form" action="#">
-        <label for="in-email">0. Eメールアドレス</label>
-        <input id="in-email" name="Eメール" type="email" />
-
-        <label for="in-date">1. 参加日</label>
-        <input id="in-date" name="日付" type="date" />
-
-        <label for="in-name">2. 代表者のお名前</label>
-        <input id="in-name" name="代表者" type="text" />
-
-        <label for="in-num">3. 人数</label>
-        <textarea id="in-num" name="人数">大人　人、
-子ども　人、
-年令(①　才、②　才、③　才、④　才)</textarea>
-
-        <label for="in-tel">4. 当日連絡先</label>
-        <input id="in-tel" type="tel" name="連絡先" />
-
-        <label for="in-allergy">5. 食品アレルギーがある方：</label>
-        <textarea id="in-allergy" name="アレルギー">
-①お名前　　　　　　年令
-　内容
-②お名前　　　　　　年令
-　内容</textarea>
-
-
-        <label for="in-misc">6. やってみたいこと、<br/>連絡他何でも</label>
-        <textarea id="in-misc" name="備考"></textarea>
-
-        <label for="in-submit"></label>
-        <input id="in-submit" type="submit" class="large-button" value="申し込み" />
-      </form>
+      <p style="padding:2em">徳島は眉山の懐の、そこで暮らす生き物たちに配慮しつつ整備された森と、自然農の畑を舞台に、様々な驚きや発見がある自然学校。一月に一日だけ開講します。</p>
+      <section>
+        <h3>案内中</h3>
+        <div class="">
+          <!--a href="pdf/里山大地自然学校案内20220925魔法の葉っぱ.pdf">2022-09-25 魔法の葉っぱ</a -->
+          2022-10-23 ソーラーパワー
+          <a class="button" href="https://satoyamadaich.github.io/?date=2022-10-23&title=%E3%82%BD%E2%88%92%E3%83%A9%E2%88%92%E3%83%91%E3%83%AF%E3%83%BC%E3%82%92%E3%81%A4%E3%81%8B%E3%81%BE%E3%81%88%E3%82%8D">申し込みフォーム</a>
+        </div>
+      </section>
+      <section class="spacious">
+        <h3>過去の案内</h3>
+        <div class="pdflinks">
+          <a href="pdf/里山大地自然学校案内20220828栗拾い・柿渋染め 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220724香りを収穫する 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220624梅干を漬ける 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220529野点・竹水でたてるお茶 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220424筍スクスク・子どももすくすく 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220327春の野草料理と箸作り 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220227生芋で作る美味しいコンニャク 終了.pdf"></a>
+          <a href="pdf/里山大地自然学校案内20220123昔の型で焼くワッフル 終了.pdf"></a>
+        </div>
+      </section>
+      <img src="imgs/2022-09-photos.png" alt="photos of natural things in the forest" width="100%"/>
     </main>
     <footer>
       <address>
