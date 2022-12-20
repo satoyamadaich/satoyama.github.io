@@ -60,6 +60,7 @@ main>h3 {
 }
 
 .button {
+    display:inline-block;
     border: 1px solid #c3c3c3;
     background: #64c99b;
     text-decoration: none;
